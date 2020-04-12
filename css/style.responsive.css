@@ -1,0 +1,515 @@
+/** Author: Vikas Singh **/
+
+@media screen and (max-width: 1080px) {
+    .tabSection .tabBody p {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+    .boxImageWrap {
+        bottom: -67px;
+        width: 512px;
+        height: 400px;
+        background-size: 100%;
+    }
+
+    .newsLetterInput input {
+        width: 140px;
+    }
+
+    .innerVideoDescription .childItems video,
+    .woWeAreSection .innerVideoDescription {
+        height: 400px;
+    }
+
+    .innerVideoDescription .childItems.childDesc {
+        padding: 30px;
+    }
+
+    .acheivementsWrap p i {
+        top: -12px;
+    }
+
+    .acheivementsWrap p {
+        padding-left: 60px;
+    }
+    .acheivementsWrap p span.numbers {
+        font-size: 20px;
+    }
+    .acheivementsWrap p span.description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .trackQuoteWrap {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: 400px;
+    }
+
+    .messageWrap h1, .messageWrap h2 {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+
+    .messageWrap p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .innerTrackWrap {
+        padding: 30px 0;
+    }
+
+    .innerTrackWrap .tabSection {
+        padding: 30px;
+        z-index: 3;
+    }
+
+    .innerTrackWrap .tabination {
+        padding: 0 30px;
+    }
+
+    .innerTrackWrap .tabination a.tab {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .boxImageWrap {
+        bottom: -59px;
+        width: 360px;
+        right: -25px;
+        z-index: 1;
+        height: 270px;
+    }
+
+    .tabSection .tabBody {
+        width: 100%;
+    }
+
+    .tabSection .trackingDiv input {
+        max-width: 300px;
+    }
+
+    .newsLetterInput button,
+    .newsLetterInput input {
+        float: none;
+        border-radius: 5px;
+    }
+
+    .newsLetterInput input {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .transportModeWrap .modes {
+        height: 172px;
+    }
+
+    .transportModeWrap .modes a {
+        font-size: 14px;
+        bottom: 20px;
+    }
+
+    .portFolioWrap {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hamburgerIcon, .overLayForMobile {
+        display: block;
+        transition: all 0.3s ease-in;
+    }
+
+    .nav ul.mainMenuList {
+        display: none;
+        position: fixed;
+        z-index: 11;
+        opacity: 0;
+        top: 40%;
+        left: 50%;
+        transition: all 0.3s ease-in;
+        width: 200px;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav ul.mainMenuList > li {
+        display: block;
+        transition: all 0.5s ease-in;
+        margin: 0 0 8px 0;
+    }
+
+    .nav ul.mainMenuList > li a {
+        font-size: 18px;
+    }
+
+    .nav ul.mainMenuList.active {
+        display: block;
+    }
+
+    .nav ul.mainMenuList.active.show {
+        top: 50%;
+        opacity: 1;
+    }
+
+    .nav ul.mainMenuList.active.show > li {
+        margin: 0 0 20px 0;
+    }
+
+    .overLayForMobile {
+        display: none;
+        transition: all 0.3s ease-in;
+        position: fixed;
+        z-index: 10;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        background: var(--btn-color-secondary);
+    }
+
+    .overLayForMobile.active {
+        display: block;
+    }
+
+    .overLayForMobile.active.show {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamburgerIcon {
+        position: fixed;
+        display: block;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        z-index: 11;
+        height: 36px;
+        overflow: hidden;
+    }
+
+    .hamburgerIcon span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--white);
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        transition: all 0.3s ease-in;
+    }
+
+    .hamburgerIcon span:before, .hamburgerIcon span:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: var(--white);
+        top: -7px;
+        left: 0;
+        transition: all 0.3s ease-in;
+    }
+
+    .hamburgerIcon span:after {
+        top: 7px;
+    }
+
+    .hamburgerIcon.active span {
+        left: -100%;
+    }
+
+    .hamburgerIcon.active span:before, .hamburgerIcon.active span:after {
+        top: 0;
+        left: 100%;
+    }
+
+    .hamburgerIcon.active span:before {
+        transform: rotate(45deg);
+    }
+
+    .hamburgerIcon.active span:after {
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bg-Logo {
+        width: 90px;
+        height: 30px;
+        background-position: -7px -6px;
+        background-size: 268%;
+    }
+
+    .banner {
+        height: 290px;
+    }
+
+    .innerImageWrap .messageWrap {
+        top: 34%;
+    }
+
+    .messageWrap h1, .messageWrap h2 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .messageWrap p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .carouselWrap .innerImageWrap {
+        overflow: hidden;
+    }
+
+    .btnInBanner {
+        bottom: 60px;
+        font-size: 14px;
+        line-height: 13px;
+        min-width: 118px;
+    }
+
+    .dotForCarousel {
+        bottom: 30px;
+    }
+
+    .innerVideoDescription .childItems video, .woWeAreSection .innerVideoDescription {
+        height: 300px;
+    }
+
+    .innerVideoDescription .childItems.childDesc {
+        padding: 20px;
+    }
+
+    .childItems.childDesc h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .childItems.childDesc p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+
+    .tabSection .tabBody p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .boxImageWrap {
+        bottom: -33px;
+    }
+
+    .clientSection .acheivementsWrap {
+        display: block;
+        text-align: center;
+    }
+
+    .acheivementsWrap p {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 70px;
+    }
+
+    .portFolioWrap {
+        display: block;
+        justify-content: unset;
+    }
+
+    .portFolioWrap .childItems {
+        width: 100%;
+        margin: 0;
+    }
+
+    .portFolioWrap .childItems.portFolio {
+        margin-bottom: 50px;
+    }
+
+    .loader {
+        border: 6px solid var(--text-block-grey);
+        border-top: 6px solid var(--btn-color-secondary);
+        width: 60px;
+        height: 60px;
+    }
+
+    .tabSection .quoteForm input,
+    .tabSection .quoteForm select,
+    .tabSection .quoteForm .controlGroup {
+        width: 100%;
+        float: none;
+        display: block;
+        margin-right: 0;
+    }
+    .tabSection .quoteForm .controlGroup input:first-child,
+    .tabSection .quoteForm .controlGroup select:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carouselWrap .innerImageWrap img {
+        width: 150%;
+        left: -90px;
+    }
+
+    .servicesDetails {
+        display: block;
+        margin-top: 30px;
+        justify-content: unset;
+    }
+
+    .servicesDetails .childServices {
+        width: 100%;
+    }
+
+    article.servicePointers {
+        margin-bottom: 30px;
+    }
+
+    section .sectionTitle {
+        font-size: 24px;
+    }
+
+    section .subText {
+        font-size: 14px;
+    }
+
+    .acheivementsWrap p {
+        width: 58%;
+        padding-left: 64px;
+    }
+
+    .innerTrackWrap .tabination {
+        padding: 0 20px;
+    }
+
+    .innerTrackWrap .tabSection {
+        padding: 20px;
+    }
+
+    .tabSection .trackingDiv input {
+        font-size: 13px;
+        width: 55%;
+    }
+
+    .tabSection .trackingDiv button {
+        min-width: 90px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .tabSection .trackingDiv span.errorMsg {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .transportModeWrap .modes {
+        height: 120px;
+    }
+
+    .transportModeWrap .modes a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .trackQuoteWrap {
+        padding: 0 10px;
+    }
+
+    .boxImageWrap {
+        width: 389px;
+        right: 0;
+        height: 297px;
+        opacity: 0.88;
+    }
+    .nav ul.mainMenuList > li.hasChildMenu {
+        z-index: 2;
+    }
+    .nav ul li ul.innerMenu {
+        width: 100%;
+    }
+
+    .messageWrap h1, .messageWrap h2 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .innerTrackWrap .tabination a.tab {
+        margin-right: 20px;
+    }
+
+    .accordionWrap label.title {
+        font-size: 14px;
+    }
+
+    .accordionWrap label.title:after {
+        top: 16px;
+    }
+
+    .accordionWrap label.title.active:after {
+        top: 20px;
+    }
+
+    .footerLinks .innerDetails {
+        display: block;
+        justify-content: unset;
+    }
+
+    .footerLinks .childItems {
+        margin: 14px 0 0 0;
+        width: 100%;
+        padding-top: 14px;
+        border-top: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    .footerLinks .childItems:first-child {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .newsLetterInput button, .newsLetterInput input {
+        float: left;
+    }
+    .newsLetterInput input {
+        width: 70%;
+        border-radius: 5px 0 0 5px;
+    }
+    .newsLetterInput button {
+        width: 30%;
+        padding: 10px 10px 9px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    footer p.copyRight {
+        font-size: 12px;
+    }
+    footer .socialWraps a {
+        margin-right: 1px;
+    }
+
+    .childItems.childDesc h3 {
+        font-size: 22px;
+    }
+
+    .tabSection .quoteForm .action button {
+        width: 100%;
+    }
+}
